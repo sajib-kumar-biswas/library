@@ -1,0 +1,129 @@
+
+
+
+:root {
+    --color-primary: #344D67;
+    --color-white: #fff;
+    --color-black: #000;
+    --color-gray: #65647C;
+    --form-color: #F2E5E5;
+    --color-success: #54B435;
+
+    --transition: all 1s linear;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.container h2{
+    margin: 0 auto;
+    width: fit-content;
+}
+
+
+
+/* ============== HEADER SECTION STYLES ================== */
+header {
+    margin: 2rem 0;
+    height: fit-content;
+}
+.header__container h2 {
+    font-size: 3rem;
+}
+
+.header__container h2 span {
+    padding: 0.5rem;
+    background: var(--color-primary);
+    color: var(--color-white);
+    border-radius: 0.5rem;
+    transition: var(--transition);
+}
+
+.header__container h2 span:hover {
+    background: var(--color-white);
+    color: var(--color-black);
+}
+
+/* =========== ADD BUTTON ============ */
+
+.add-btn {
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    background: var(--color-primary);
+    color: var(--color-white);
+    border: 2px solid transparent;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    display: block;
+    margin: 5rem auto;
+}
+
+.add-btn:hover {
+    background: transparent;
+    color: var(--color-primary);
+    border-color: var(--color-primary);
+}
+
+.add-btn i {
+    margin-right: 0.5rem;
+}
+
+/* =========== FORM CONTAINER ============== */
+.form__container {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    width: 100vw;
+    background: var(--color-gray);
+    display: grid;
+    place-items: center;
+    opacity: 0.95;
+}
+
+.dnone {
+    display: block;
+}
+
+.form {
+    background: var(--color-primary);
+    display: flex;
+    border-radius: 0.5rem;
+    height: 20rem;
+    width: 15rem;
+    padding: 1rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.form input {
+    background: white;
+    color: var(--color-black);
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.form button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background: var(--color-success);
+    color: var(--color-white);
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 0.3rem;
+}
+
+.form button:hover {
+    border-color: var(--color-success);
+    background: transparent;
+    color: var(--color-success);
+}
