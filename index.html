@@ -26,23 +26,30 @@
     <button class="add-btn"><i class="uil uil-plus"></i>Add Book</button>
 
     <div class="form__container dnone">
-        <form class="form">
+        <div class="form">
             <h3>Add new book</h3>
-            <input type="text" name="title" id="title" placeholder="Title">
-            <input type="text" name="author" id="author" placeholder="Author">
-            <input type="text" name="pages" id="pages" placeholder="Pages">
+            <input required type="text" name="title" id="title" placeholder="Title">
+            <input required type="text" name="author" id="author" placeholder="Author">
+            <input required type="text" name="pages" id="pages" placeholder="Pages">
             <span>
             <label for="read">Have you read it?</label>
             <input type="checkbox" name="read" id="read">
             </span>
-            <button type="submit">Submit</button>
-        </form>
+            <button id="submit-btn" type="button">Submit</button>
+        </div>
     </div>
 
     <div class="container books__container">
-        <div class="book">
-
-        </div>
+        <!-- <div class="book">
+            <h3>Title</h3>
+            <p>The Hobbit</p>
+            <h3>Author</h3>
+            <p>SKB</p>
+            <h3>Number Of Pages</h3>
+            <p>290</p>
+            <button class="combtn read">Read</button>
+            <button class="combtn remove">Remove</button>
+        </div> -->
     </div>
 
 
